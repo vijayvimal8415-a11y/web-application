@@ -7,6 +7,7 @@ Exposes:
   GET /metrics   -> Prometheus metrics (request count, latency)
 """
 import time
+# pyrefly: ignore [missing-import]
 from flask import Flask, Response
 from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
 
